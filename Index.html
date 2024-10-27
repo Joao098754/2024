@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CLASSIFICAÇÃO</h1>
+    </header>
+    
+    <main>
+        <button id="adminButton">Virar Administrador</button>
+        
+        <div id="adminForm" style="display: none;">
+            <input type="password" id="adminPin" placeholder="Digite seu PIN" />
+            <button id="submitPin">Enviar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Foto</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>Jogador 1</td>
+                    <td><img src="placeholder.jpg" alt="Foto do Jogador" class="photo"></td>
+                    <td><span class="rating">8.2</span> ⭐</td>
+                </tr>
+                <!-- Adicione mais jogadores aqui -->
+            </tbody>
+        </table>
+        
+        <button id="addPlayerButton">Adicionar Jogador</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
